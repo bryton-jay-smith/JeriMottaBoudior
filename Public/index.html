@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeri Motta Boudior</title>
+</head>
+
+<body onload="render()">
+    <div class="cta-banner__background-photo cta-banner__background-media cta-banner--size_md cta-banner--style_3" style="background-image: url(img/JeriMottaBoudoir.jpg);">
+        <div id="headertarget"></div>
+        <div id="whyBoudiorTarget"></div>
+        <h3>What Women Are Saying:</h3>
+        <div id="quotetarget"></div>
+        <button>I'm ready when you are. book here.</button>
+
+
+
+        <script id="quotetemplate" type="x-tmpl-mustache">
+            {{#quotes}}
+            <p>{{quote}}<i> - {{name}}</i></p> {{/quotes}}
+        </script>
+
+        <script id="headertemplate" type="x-tmpl-mustache">
+            <h1>{{title}}</h1>
+            <h2>{{subtitle}}</h2>
+        </script>
+
+        <script id="whyBoudior" type="x-tmpl-mustache">
+            <h3>{{title}}</h3>
+            <h4>{{subtitle}}</h4>
+            <p>{{paragraphA}}</p>
+            <p>{{paragraphB}}</p>
+        </script>
+
+        <script src="mustache.js"></script>
+        <script src="render.js"></script>
+</body>
+
+</html>
